@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>Company</title>
 </head>
 <body>
   <header class="header-main">
@@ -19,6 +19,7 @@
     <a href="tel:88001234567" class="phone-number">8 (800) 123-45-67</a>
     <a href="mailto:sales@log.ru" class="email">sales@log.ru</a>
   </header>
+
   <header class="header-page">
     <a href="#" class="logo-link">
       <img src="img/logo.svg" alt="Логотип компании" class="logo">
@@ -31,13 +32,12 @@
       </a>
     </div>
     <nav class="nav-header">
-      <ul class="nav">
-        <li>Услуги</li>
-        <li>О компании</li>
-        <li>Контакты</li>
-      </ul>
+      <a href="#services" class="services-link">Услуги</a>
+      <a href="#" class="services-link">О компании</a>
+      <a href="#" class="services-link">Контакты</a>
     </nav>
   </header>
+
   <main class="main">
     <section class="first-screen">
       <article class="first-screen--rectangle">
@@ -46,22 +46,103 @@
       </article>
       <img src="img/mouse.svg" alt="" class="mouse">
     </section>
+
     <section class="more-details">
       <div class="cosmetic-block"></div>
-        <article class="content-more-details">
-          <div class="content-more-details-left">
-            <div class="content-more-details-left--line"></div>
-            <h2 class="content-more-details-left--heading">грузоперевозки
-              по европе</h2>
-            <p class="content-more-details-left--clarification">Страны Евросоюза, а также Украина,
-              Белоруссия со всеми документами.</p>
-            <button class="more-details-button">ПОДРОБНЕЕ</button>
-          </div>
-          <div class="content-more-details-right">
-            <img src="img/Rectangle 4.png" alt="Желтый грузовик DAF" class="photo-truck">
+      <article class="content-more-details">
+        <div class="content-more-details-left">
+          <div class="line--orange"></div>
+          <h2 class="content-more-details-left--heading">грузоперевозки
+            по европе</h2>
+          <p class="content-more-details-left--clarification">Страны Евросоюза, а также Украина,
+            Белоруссия со всеми документами.</p>
+          <button class="more-details-button">ПОДРОБНЕЕ</button>
+        </div>
+        <div class="content-more-details-right">
+          <img src="img/Rectangle 4.png" alt="Желтый грузовик DAF" class="photo-truck">
+        </div>
+      </article>
+      <div class="cosmetic-block"></div>
+    </section>
+
+    <section class="services" id="services">
+        <article class="services-content">
+          <div class="services-content__line line--orange"></div>
+          <h2 class="services-content__heading">услуги</h2>
+          <div class="services-content__buttons">
+            <input name="air-transportation" type="radio" id="at1" checked>
+
+            <label class="services-content__button" for="at1">
+              <div class="airplane-wrapper">
+                <img src="img/airplane.svg" alt="Самолетик" class="airplane-logo">
+              </div>
+              <p class="name-button">Авиаперевозки</p>
+            </label>
+
+            <input name="air-transportation" type="radio" id="at2">
+
+            <label class="services-content__button" for="at2">
+              <div class="airplane-wrapper">
+                <img src="img/airplane.svg" alt="Самолетик" class="airplane-logo">
+              </div>
+              <p class="name-button">Авиаперевозки</p>
+            </label>
+
+            <input name="air-transportation" type="radio" id="at3">
+
+            <label class="services-content__button" for="at3">
+              <div class="airplane-wrapper">
+                <img src="img/airplane.svg" alt="Самолетик" class="airplane-logo">
+              </div>
+              <p class="name-button">Авиаперевозки</p>
+            </label>
+
+            <input name="air-transportation" type="radio" id="at4">
+
+            <label class="services-content__button" for="at4">
+              <div class="airplane-wrapper">
+                <img src="img/airplane.svg" alt="Самолетик" class="airplane-logo">
+              </div>
+              <p class="name-button">Авиаперевозки</p>
+            </label>
+
+            <input name="air-transportation" type="radio" id="at5">
+
+            <label class="services-content__button" for="at5">
+              <div class="airplane-wrapper">
+                <img src="img/airplane.svg" alt="Самолетик" class="airplane-logo">
+              </div>
+              <p class="name-button">Авиаперевозки</p>
+            </label>
+
+            <input name="air-transportation" type="radio" id="at6">
+
+            <label class="services-content__button" for="at6">
+              <div class="airplane-wrapper">
+                <img src="img/airplane.svg" alt="Самолетик" class="airplane-logo">
+              </div>
+              <p class="name-button">Авиаперевозки</p>
+            </label>
+
+            <input name="air-transportation" type="radio" id="at7">
+
+            <label class="services-content__button" for="at7">
+              <div class="airplane-wrapper">
+                <img src="img/airplane.svg" alt="Самолетик" class="airplane-logo">
+              </div>
+              <p class="name-button">Авиаперевозки</p>
+            </label>
+
+            <input name="air-transportation" type="radio" id="at8">
+
+            <label class="services-content__button" for="at8">
+              <div class="airplane-wrapper">
+                <img src="img/airplane.svg" alt="Самолетик" class="airplane-logo">
+              </div>
+              <p class="name-button">Авиаперевозки</p>
+            </label>
           </div>
         </article>
-      <div class="cosmetic-block"></div>
     </section>
   </main>
 </body>
