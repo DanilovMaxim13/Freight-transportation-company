@@ -420,3 +420,34 @@ input[name="air-transportation"]:checked + label {
   box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.300);
   cursor: pointer;
 }
+
+.map {
+  margin-top: 15vh;
+  width: 100%;
+  height: 60vh;
+
+  box-sizing: border-box;
+  opacity: 0.5;
+}
+
+.footer {
+  margin-top: -0.7vh;
+  height: 20vh;
+  background-color: #C8A35F;
+
+  display: flex;
+}
+
+.footer-wrapper {
+  margin: auto;
+  width: 70%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+}
