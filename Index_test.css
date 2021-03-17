@@ -1,0 +1,61 @@
+:root {
+  --main-bg-color: #2F343A;
+  --main-text-color: #ffffff;
+  --additional-bg-color: #C8A35F;
+}
+
+body {
+  margin: 0;
+  background: var(--main-bg-color);
+  font-family: Roboto;
+  color: var(--main-text-color);
+
+  font-size: 18px;
+}
+
+/* Блок "first-header" */
+.fisrt-header {
+  background-color: var(--additional-bg-color);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fisrt-header__languages-page,
+.fisrt-header__phone-number,
+.fisrt-header__email {
+  margin: 3vh 0;
+}
+
+/* Блок "languages-page" */
+.languages-page {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.languages-page__lang {
+  display: none;
+}
+
+.languages-page__name-lang {
+  margin: 0 3px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.languages-page__lang:checked ~ .languages-page__name-lang {
+  opacity: 1;
+}
+
+/* Блок "phone-number" и "email" */
+.phone-number,
+.email {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 0.8em;
+}
+
+.phone-number:hover,
+.email:hover {
+  opacity: 0.7;
+}
