@@ -4,41 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="img/png">
+  <link rel="stylesheet" href="index_test.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <title>Company</title>
 </head>
 <body>
-  <header class="header-main">
-    <ul class="lang-nav">
-      <li class="lang">РУС</li>
-      <li class="lang">ENG</li>
-      <li class="lang">FR</li>
-    </ul>
-    <a href="tel:88001234567" class="phone-number">8 (800) 123-45-67</a>
-    <a href="mailto:sales@log.ru" class="email">sales@log.ru</a>
+  <header class="fisrt-header">
+    <div class="fisrt-header__languages-page languages-page">
+      <label> 
+        <input class="languages-page__lang" name="languages-page__lang" type="radio" checked> 
+        <span class="languages-page__name-lang">Рус</span> 
+      </label>
+      <label> 
+        <input class="languages-page__lang" name="languages-page__lang" type="radio"> 
+        <span class="languages-page__name-lang">Eng</span> 
+      </label>
+      <label> 
+        <input class="languages-page__lang" name="languages-page__lang" type="radio"> 
+        <span class="languages-page__name-lang">Fr</span> 
+      </label>
+    </div>
+
+    <a href="tel:88001234567" class="fisrt-header__phone-number phone-number">8 (800) 123-45-67</a>
+    <a href="mailto:sales@log.ru" class="fisrt-header__email email">sales@log.ru</a>
   </header>
 
-  <header class="header-page">
-    <a href="#" class="logo-link">
-      <img src="img/logo.svg" alt="Логотип компании" class="logo">
+  <header class="second-header">
+    <a href="#" class="second-header__logo logo">
+      <img src="img/logo.svg" alt="Логотип компании" class="logo__image">
     </a>
-    <div class="header-page-line"></div>
-    <div class="our-office">
-      <a href="#" class="our-office-link">
-        <img src="img/placeholder.svg" alt="Иконка геолокации" class="placeholder">
-        Наши офисы
-      </a>
-    </div>
-    <nav class="nav-header">
-      <a href="#services" class="services-link">Услуги</a>
-      <a href="#about-company" class="services-link">О компании</a>
-      <a href="#" class="services-link">Контакты</a>
+    <div class="second-header__line"></div>
+    <a href="#" class="second-header__our-office our-office">
+      <img src="img/placeholder.svg" alt="Иконка геолокации" class="our-office__placeholder">
+      <p class="our-office__text">Наши офисы</p>
+    </a>
+    <nav class="second-header__nav nav">
+      <a href="#" class="nav__link">Услуги</a>
+      <a href="#" class="nav__link">О компании</a>
+      <a href="#" class="nav__link">Контакты</a>
     </nav>
   </header>
 
-  <main class="main">
+  <!-- <main class="main">
     <section class="first-screen">
       <article class="first-screen--rectangle">
         <h1 class="first-screen--heading">Грузовые перевозки</h1>
@@ -198,7 +207,7 @@
           <a href="tel:88001234567" class="phone-number">8 (800) 123-45-67</a>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </main>
 </body>
 </html>
