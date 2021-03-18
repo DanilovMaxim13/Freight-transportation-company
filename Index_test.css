@@ -59,3 +59,81 @@ body {
 .email:hover {
   opacity: 0.7;
 }
+
+/* Блок "second-header" */
+.second-header {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-header__logo {
+  margin: 3vh 0;
+  margin-left: 10vw;
+}
+
+.second-header__line {  
+  width: 1px;
+  height: 6vh;
+  margin: 0 2vw;
+
+  background-color: #fff;
+}
+
+.second-header__our-office{
+  margin-right: 2vw;
+}
+
+.second-header__nav {
+  margin: 3vh 10vw 3vh 0;
+  
+
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+/* Блок "logo" */
+.logo-image {
+  width: 100%;
+}
+
+/* Блок "our-office" */
+.our-office {
+  display: flex;
+  align-items: center;  
+  text-decoration: none;
+}
+
+.our-office:hover {
+  opacity: 0.7;
+}
+
+.our-office__placeholder {
+  height: 100%;
+}
+
+.our-office__text {
+  color: var(--main-text-color);
+  font-size: 0.8em;
+}
+
+/* Блок "nav" */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  margin: 0 1vw;
+
+  font-size: 0.9em;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.nav__link:hover {
+  opacity: 0.7;
+}
