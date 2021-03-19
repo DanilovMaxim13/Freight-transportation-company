@@ -137,3 +137,43 @@ body {
 .nav__link:hover {
   opacity: 0.7;
 }
+
+/* Блок "first-screen" */
+.first-screen {
+  background: url(img/Rectangle\ 2.jpg) center / cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-screen__border {  
+  width: 60vw;
+  height: 35vh;
+  margin: 11vh 0;
+  padding: 3vh 3vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  text-align: center;
+  border: 1px solid var(--additional-bg-color);
+}
+
+.first-screen__heading {
+  margin: 0;
+  
+  text-transform: uppercase;
+  font-size: 3.3em;
+}
+
+.first-screen__clarification {
+  margin: 0;
+
+  font-size: 1.1em;
+}
+
+.first-screen__mouse {
+  margin: 6vh 0 3vh;
+}
