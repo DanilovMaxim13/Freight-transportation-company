@@ -2,6 +2,7 @@
   --main-bg-color: #2F343A;
   --main-text-color: #ffffff;
   --additional-bg-color: #C8A35F;
+  --light-main-bg-color: #393F47;
 }
 
 body {
@@ -176,4 +177,86 @@ body {
 
 .first-screen__mouse {
   margin: 6vh 0 3vh;
+}
+
+/* Блок "second-screen" */
+.second-screen {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-screen__cosmetic-block{
+  width: 34%;
+  height: 70vh;
+  background-color: var(--light-main-bg-color);
+}
+
+.second-screen__content {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%);
+}
+
+/* Блок "line" */
+.line {
+  width: 10%;
+  height: 4px;
+  background-color: #C8A35F;
+}
+
+.line_short {
+  width: 25%;
+}
+
+/* Блок "more-details" */
+.more-details {
+  display: flex;
+  justify-content: space-around;
+}
+.more-details__left,
+.more-details__right {
+  width: 40%;
+}
+
+.more-details__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.more-details__heading {
+  margin: 0;
+  
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.more-details__clarification {
+  width: 95%;
+  margin: 0;
+
+  font-size: 1em;
+}
+
+.more-details__button {
+  width: 40%;
+  height: 15%;
+  background-color: var(--additional-bg-color);
+  
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.more-details__button:hover {
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.500);
+  cursor: pointer;
 }
