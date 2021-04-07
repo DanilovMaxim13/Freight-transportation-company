@@ -1,0 +1,453 @@
+body {
+  margin: auto;
+  background: #2F343A;
+  font-family: Roboto;
+}
+
+/* header-main */
+.header-main {
+  width: 100%;
+  height: 7vh;
+  min-height: 28px;
+  background-color: #C8A35F;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: max(12px, 2vh);
+}
+
+.lang-nav {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+
+  list-style-type: none;
+}
+
+.lang {
+  margin-left: 10px;
+  color:  #fff;
+
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.lang:first-child {
+  opacity: 1;
+}
+
+.phone-number,
+.email {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* hover-effect */
+.phone-number:hover,
+.email:hover,
+.our-office-link:hover,
+.nav-header a:hover  {
+  opacity: 0.7;
+}
+
+/* header-page */
+.header-page {
+  width: 80%;
+  height: 7vh;
+  margin: 4vh auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link,
+.logo {
+  height: inherit;
+}
+
+.header-page-line {
+  height: 100%;
+  width: 1px;
+  margin: 0 30px;
+  background-color: #fff;
+}
+
+.our-office {
+  flex-grow: 1;
+}
+
+.our-office-link {
+  float: left;
+  display: flex;
+  align-items: center;
+  
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+.placeholder {
+  margin-right: 10px;
+}
+
+.nav-header {
+  width: 25%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-header a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* main */
+.main {
+  width: 100%;
+}
+
+/* first-screen */
+.first-screen {
+  height: 78vh;
+
+  background-image: url(img/Rectangle\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.first-screen--rectangle {
+  width: 60%;
+  height: 45%;
+  margin: auto;
+  border: 1px solid #C8A35F;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+.first-screen--heading {
+  font-size: 4.5vw;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.first-screen--clarification {
+  margin: 0 auto 3%;
+  width: 95%;
+  font-size: 1.3vw;
+  color: #fff;
+}
+
+.mouse {
+  width: 30px;
+  margin: 0 auto 30px;
+}
+
+/* more-details */
+.more-details {
+  position: relative;
+  height: 60vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.cosmetic-block{
+  width: 34%;
+  height: 100%;
+  background-color: #393F47;
+}
+
+.content-more-details {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-more-details-left {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  color: #fff;
+}
+
+.content-more-details-left {
+  width: 40%;
+}
+
+.line--orange {  
+  width: 25%;
+  height: 4px;
+  background-color: #C8A35F;
+}
+
+.content-more-details-left--heading,
+.services-content__heading,
+.content-about-company__heading {
+  margin: 0;
+  
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.content-more-details-left--clarification {  
+  width: 95%;
+  margin: 0;
+
+  font-size: 1.3vw;
+}
+
+.more-details-button {
+  width: 40%;
+  height: 15%;
+  background-color: #C8A35F;
+  
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.more-details-button:hover {
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.500);
+  cursor: pointer;
+}
+
+/* services */
+.services {
+  height: 100vh;
+  
+  display: flex;
+}
+
+.services-content {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  color: #fff;
+}
+
+.services-content__line {
+  width: 10%;
+}
+
+.services-content__buttons {
+  width: 100%;
+  height: 70%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+}
+
+input[name="air-transportation"] {
+  display: none;
+}
+
+.services-content__button {
+  background-color: #393F47;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-content__button:hover {
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.300);
+  cursor: pointer;
+}
+
+.airplane-wrapper {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background-color: #ffffff;
+
+
+  display: flex;
+  
+  border-radius: 45px;
+}
+
+.airplane-logo {
+  margin: auto;
+}
+
+.name-button {
+  margin: 0 0 20px;
+
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+input[name="air-transportation"]:checked + label {
+  background-color: #C8A35F;
+  
+  box-shadow: none;
+}
+
+/* about company */
+.about-company {
+  position: relative;
+  height: 70vh;
+
+  display: flex;
+}
+
+.center-block {
+  margin: auto;
+}
+
+.content-about-company {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-about-company .left {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  color: #fff;
+}
+
+.content-about-company__clarification {
+  margin: 0 0 10%;
+
+  font-size: 1vw;
+}
+
+.content-about-company .right {
+  width: 50%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+}
+
+.about-company-inform {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  color: #2F343A;
+  text-align: center;
+}
+
+.about-company-inform .number {
+  margin: 10% 0 0;
+
+  font-size: 4vw;
+  font-weight: 700;
+}
+
+.about-company-inform .description {
+  margin: 0;
+
+  font-size: 1.3vw;
+}
+
+.about-company-inform .addition {
+  margin: 5% 0 10%;
+  
+  font-size: 1vw;
+}
+
+.about-company-photo-truck-wrapper {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.about-company-photo-truck {
+  object-fit: cover;
+}
+
+.about-company-inform:hover {
+  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.300);
+  cursor: pointer;
+}
+
+.map {
+  margin-top: 15vh;
+  width: 100%;
+  height: 60vh;
+
+  box-sizing: border-box;
+  opacity: 0.5;
+}
+
+.footer {
+  margin-top: -0.7vh;
+  height: 20vh;
+  background-color: #C8A35F;
+
+  display: flex;
+}
+
+.footer-wrapper {
+  margin: auto;
+  width: 70%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+}

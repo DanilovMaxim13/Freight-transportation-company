@@ -1,234 +1,255 @@
 body {
-  margin: auto;
-  background: #2F343A;
+  margin: 0;
+  background: var(--main-bg-color);
   font-family: Roboto;
+  color: var(--main-text-color);
+
+  font-size: 18px;
 }
 
-/* header-main */
-.header-main {
-  width: 100%;
-  height: 7vh;
-  min-height: 28px;
-  background-color: #C8A35F;
+:root {
+  --main-bg-color: #2F343A;
+  --main-text-color: #ffffff;
+  --additional-bg-color: #C8A35F;
+  --light-main-bg-color: #393F47;
+}
+
+/* Блок "first-header" */
+.fisrt-header {
+  background-color: var(--additional-bg-color);
 
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-  font-size: max(12px, 2vh);
 }
 
-.lang-nav {
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-
-  list-style-type: none;
+.fisrt-header__languages-page,
+.fisrt-header__phone-number,
+.fisrt-header__email {
+  margin: 3vh 0;
 }
 
-.lang {
-  margin-left: 10px;
-  color:  #fff;
+/* Блок "languages-page" */
+.languages-page {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
 
-  opacity: 0.5;
+.languages-page__lang {
+  display: none;
+}
+
+.languages-page__name-lang {
+  margin: 0 3px;
+  opacity: 0.7;
   cursor: pointer;
 }
-
-.lang:first-child {
+.languages-page__lang:checked ~ .languages-page__name-lang {
   opacity: 1;
 }
 
+/* Блок "phone-number" и "email" */
 .phone-number,
 .email {
-  color: #fff;
   text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 0.8em;
 }
 
-/* hover-effect */
 .phone-number:hover,
-.email:hover,
-.our-office-link:hover,
-.nav-header a:hover  {
+.email:hover {
   opacity: 0.7;
 }
 
-/* header-page */
-.header-page {
-  width: 80%;
-  height: 7vh;
-  margin: 4vh auto;
-
+/* Блок "second-header" */
+.second-header {  
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo-link,
-.logo {
-  height: inherit;
+.second-header__logo {
+  margin: 3vh 0;
+  margin-left: 10vw;
 }
 
-.header-page-line {
-  height: 100%;
+.second-header__line {  
   width: 1px;
-  margin: 0 30px;
+  height: 6vh;
+  margin: 0 2vw;
+
   background-color: #fff;
 }
 
-.our-office {
-  flex-grow: 1;
+.second-header__our-office{
+  margin-right: 2vw;
 }
 
-.our-office-link {
-  float: left;
-  display: flex;
-  align-items: center;
+.second-header__nav {
+  margin: 3vh 10vw 3vh 0;
   
-  text-decoration: none;
-  font-size: 14px;
-  color: #fff;
-}
-
-.placeholder {
-  margin-right: 10px;
-}
-
-.nav-header {
-  width: 25%;
 
   display: flex;
-  justify-content: space-between;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
-.nav-header a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  color: #fff;
-}
-
-/* main */
-.main {
+/* Блок "logo" */
+.logo-image {
   width: 100%;
 }
 
-/* first-screen */
-.first-screen {
-  height: 78vh;
+/* Блок "our-office" */
+.our-office {
+  display: flex;
+  align-items: center;  
+  text-decoration: none;
+}
 
-  background-image: url(img/Rectangle\ 2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.our-office:hover {
+  opacity: 0.7;
+}
+
+.our-office__placeholder {
+  height: 100%;
+}
+
+.our-office__text {
+  color: var(--main-text-color);
+  font-size: 0.8em;
+}
+
+/* Блок "nav" */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  margin: 0 1vw;
+
+  font-size: 0.9em;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.nav__link:hover {
+  opacity: 0.7;
+}
+
+/* Блок "first-screen" */
+.first-screen {
+  background: url(img/Rectangle\ 2.jpg) center / cover;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.first-screen--rectangle {
-  width: 60%;
-  height: 45%;
-  margin: auto;
-  border: 1px solid #C8A35F;
+.first-screen__border {  
+  width: 60vw;
+  height: 35vh;
+  margin: 11vh 0;
+  padding: 3vh 3vw;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  
   text-align: center;
+  border: 1px solid var(--additional-bg-color);
 }
 
-.first-screen--heading {
-  font-size: 4.5vw;
+.first-screen__heading {
   margin: 0;
-  color: #fff;
+  
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: 3.3em;
 }
 
-.first-screen--clarification {
-  margin: 0 auto 3%;
-  width: 95%;
-  font-size: 1.3vw;
-  color: #fff;
+.first-screen__clarification {
+  margin: 0;
+
+  font-size: 1.1em;
 }
 
-.mouse {
-  width: 30px;
-  margin: 0 auto 30px;
+.first-screen__mouse {
+  margin: 6vh 0 3vh;
 }
 
-/* more-details */
-.more-details {
+/* Блок "cosmetic-block" */
+.cosmetic-block{
+  width: 34%;
+  height: 70vh;
+  background-color: var(--light-main-bg-color);
+}
+
+/* Блок "second-screen" */
+.second-screen {
   position: relative;
-  height: 60vh;
 
   display: flex;
   justify-content: space-between;
 }
 
-.cosmetic-block{
-  width: 34%;
-  height: 100%;
-  background-color: #393F47;
-}
-
-.content-more-details {
+.second-screen__content {
   position: absolute;
-  width: 70%;
-  height: 70%;
-  margin: auto;
+  width: 65%;
+  height: 60%;
 
   left: 50%;
   top: 50%;
   transform:translate(-50%, -50%);
-
-  display: flex;
-  justify-content: space-between;
 }
 
-.content-more-details-left {
-  width: 40%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-  color: #fff;
-}
-
-.content-more-details-left {
-  width: 40%;
-}
-
-.line--orange {  
-  width: 25%;
+/* Блок "line" */
+.line {
+  width: 10%;
   height: 4px;
   background-color: #C8A35F;
 }
 
-.content-more-details-left--heading,
-.services-content__heading,
-.content-about-company__heading {
+.line_short {
+  width: 25%;
+}
+
+/* Блок "more-details" */
+.more-details {
+  display: flex;
+  justify-content: space-between;
+}
+.more-details__left,
+.more-details__right {
+  width: 40%;
+}
+
+.more-details__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.more-details__heading {
   margin: 0;
   
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2em;
 }
 
-.content-more-details-left--clarification {  
+.more-details__clarification {
   width: 95%;
   margin: 0;
 
-  font-size: 1.3vw;
+  font-size: 1em;
 }
 
-.more-details-button {
+.more-details__button {
   width: 40%;
   height: 15%;
-  background-color: #C8A35F;
+  background-color: var(--additional-bg-color);
   
   border: none;
   outline: none;
@@ -236,38 +257,41 @@ body {
   font-weight: bold;
 }
 
-.more-details-button:hover {
+.more-details__button:hover {
   box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.500);
   cursor: pointer;
 }
 
-/* services */
-.services {
-  height: 100vh;
-  
-  display: flex;
+/* Блок "third-screen" */
+.third-screen__services {
+  width: 65%;
+  height: 70vh;
+
+  margin: 15vh auto;
 }
 
-.services-content {
-  width: 70%;
-  height: 70%;
-  margin: auto;
-
+/* Блок "services" */
+.services {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.services__heading {
+  margin: 0;
   
-  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
 }
 
-.services-content__line {
-  width: 10%;
-}
-
-.services-content__buttons {
+.services__buttons-service {
   width: 100%;
   height: 70%;
+}
 
+/* Блок "buttons-service" */
+.buttons-service {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -275,24 +299,32 @@ body {
   grid-row-gap: 1px;
 }
 
-input[name="air-transportation"] {
+.buttons-service__radio{
   display: none;
 }
 
-.services-content__button {
-  background-color: #393F47;
+.buttons-service__radio:checked + label{
+  background-color: var(--additional-bg-color);
+  transition-duration: 0.5s;
+  
+  box-shadow: none;
+}
+
+/* Блок "button-service" */
+.button-service {
+  background-color: var(--light-main-bg-color);
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.services-content__button:hover {
+.button-service:hover {
   box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.300);
   cursor: pointer;
 }
 
-.airplane-wrapper {
+.button-service__logo {
   width: 60px;
   height: 60px;
   margin: auto;
@@ -304,50 +336,42 @@ input[name="air-transportation"] {
   border-radius: 45px;
 }
 
-.airplane-logo {
+.service-logo {
   margin: auto;
 }
 
-.name-button {
+.button-service__name {
   margin: 0 0 20px;
 
   font-size: 18px;
   text-transform: uppercase;
 }
 
-input[name="air-transportation"]:checked + label {
-  background-color: #C8A35F;
-  
-  box-shadow: none;
-}
-
-/* about company */
-.about-company {
-  position: relative;
-  height: 70vh;
-
+/* Блок "fourth-screen" */
+.fourth-screen {
   display: flex;
+  position: relative;
+  justify-content: center;
 }
 
-.center-block {
-  margin: auto;
-}
-
-.content-about-company {
+.fourth-screen__about-company { 
   position: absolute;
-  width: 70%;
+  width: 65%;
   height: 70%;
-  margin: auto;
-
+  margin: auto;  
+  
   left: 50%;
   top: 50%;
   transform:translate(-50%, -50%);
+}
 
+/* Блок "about-company" */
+.about-company {
   display: flex;
   justify-content: space-between;
 }
 
-.content-about-company .left {
+.about-company__information {
   width: 40%;
 
   display: flex;
@@ -357,15 +381,26 @@ input[name="air-transportation"]:checked + label {
   color: #fff;
 }
 
-.content-about-company__clarification {
+.about-company__heading {
+  margin: 0;
+  
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.about-company__clarification {
   margin: 0 0 10%;
 
   font-size: 1vw;
 }
 
-.content-about-company .right {
-  width: 50%;
+.about-company__graphic {
+  width: 55%;
+}
 
+/* Блок "graphic" */
+.graphic {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -373,81 +408,54 @@ input[name="air-transportation"]:checked + label {
   grid-row-gap: 1px;
 }
 
-.about-company-inform {
+.graphic__information {
   width: 100%;
   height: 100%;
   background-color: #fff;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 
-  color: #2F343A;
+  color: var(--light-main-bg-color);
   text-align: center;
+  cursor: pointer;
 }
 
-.about-company-inform .number {
-  margin: 10% 0 0;
+.graphic__information .number {
+  margin: 0;
 
-  font-size: 4vw;
+  font-size: 3em;
   font-weight: 700;
 }
 
-.about-company-inform .description {
+.graphic__information .description {
   margin: 0;
-
-  font-size: 1.3vw;
-}
-
-.about-company-inform .addition {
-  margin: 5% 0 10%;
   
-  font-size: 1vw;
+  font-weight: 400;
+  font-size: 1em;
 }
 
-.about-company-photo-truck-wrapper {
+.graphic__information .addition {
+  margin: 0;
+  
+  font-weight: 200;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.graphic__information:hover > .addition{
+  color: var(--light-main-bg-color);
+  transition-duration: 1s;
+}
+
+.graphic__photo {
   width: 100%;
   height: 100%;
 
   overflow: hidden;
 }
 
-.about-company-photo-truck {
+.graphic_photo-truck {
   object-fit: cover;
-}
-
-.about-company-inform:hover {
-  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.300);
-  cursor: pointer;
-}
-
-.map {
-  margin-top: 15vh;
-  width: 100%;
-  height: 60vh;
-
-  box-sizing: border-box;
-  opacity: 0.5;
-}
-
-.footer {
-  margin-top: -0.7vh;
-  height: 20vh;
-  background-color: #C8A35F;
-
-  display: flex;
-}
-
-.footer-wrapper {
-  margin: auto;
-  width: 70%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.phone-numbers {
-  display: flex;
-  flex-direction: column;
 }
